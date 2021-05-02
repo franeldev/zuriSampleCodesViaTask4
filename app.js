@@ -1,6 +1,6 @@
 const fs = require('fs');
 const http = require('http');
-let arrOfUsers = require('./arrOfUsers.json');
+const arrOfUsers = require('./arrOfUsers.json');
 
 // this check to see if directory exists, if not, it creates one
 const resultDir = 'result';
