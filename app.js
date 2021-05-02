@@ -102,7 +102,7 @@ fs.access('./result/textFile.txt', (err) =>{
 
 // CREATE SERVER (SUPPOSED TO BE READABLE STREAM PIPED WRITABLE STREAM TO CLIENT )
 const server = http.createServer((req, res) => {
-  res.writeHead(200, { 'content-Type': 'application/json' }); // text/plain
+  res.writeHead(200, { 'content-Type': 'application/json' }); 
 
   const readDataStream = fs.createReadStream('arrOfUsers.json', 'utf8');
   res.end(JSON.stringify(
